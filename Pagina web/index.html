@@ -1,20 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body class="flex flex-col">
-    <header class="w-full">
-        <nav class="w-full">
 
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap');
+    </style>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "rojo": "#bc4749",
+                        "verde": "#386641",
+                        "crema": "#f2e8cf",
+                    },
+                    fontFamily: {
+                        body: ["EB Garamond", "serif"],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="flex flex-col w-full font-body">
+    <header class="w-full">
+        <nav class="text-crema w-full h-14 bg-verde flex flex-row space-x-20 items-center justify-center">
+            <a href="./index.html"><h3 class="text-2xl">Inicio</h3></a>
+            <a href="./index.html"><img src="LOGO" alt="logotipo"></a>
+            <a href="./menu.html"><h3 class="text-2xl">La carta</h3></a>
         </nav>
     </header>
     <div name="principal">
-        <main></main>
-        <footer></footer>
+        <main class="flex flex-col items-center px-40">
+            <div>
+                <img src="" alt="">
+            </div>
+            <h4 class="text-rojo text-2xl">Il Ristorante</h4>
+            <hr class="border-rojo border-2 rounded-xl w-80">
+        </main>
+        <footer class="w-full h-30 bg-verde text-crema mt-20">
+            <p>FOOTER</p>
+        </footer>
     </div>
-    
+
 </body>
+
 </html>
