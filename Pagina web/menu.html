@@ -13,8 +13,7 @@
           colors: {
             crema: '#f5f0e1',
             verdeoscuro:  '#3a5a40',
-            rojo : 'BC4749',
-            terra:  '#b5593a',
+            rojo:  '#b5593a',
             imgbg:  '#d4cfc4',
             border: '#c8b89a',
           },
@@ -27,164 +26,179 @@
     }
   </script>
 </head>
-<body class="bg-cream font-body text-gray-800 overscroll-none overflow-hidden overflow-y-scroll">
+<body class="bg-crema font-body text-crema overscroll-none overflow-hidden overflow-y-scroll">
  
   <!-- NAV -->
-  <nav class="bg-green flex justify-center items-center gap-20 py-4 px-10">
-    <a href="#" class="text-cream tracking-wider hover:opacity-70">Inicio</a>
-    <a href="#" class="text-cream font-display italic text-3xl font-semibold">Restaurante</a>
-    <a href="#" class="text-cream tracking-wider hover:opacity-70">La carta</a>
+  <nav class="bg-verdeoscuro text-crema flex justify-center items-center gap-20 py-4 px-10">
+    <a href="#" class="text-crema tracking-wider hover:opacity-70">Inicio</a>
+    <a href="#" class="text-crema font-display italic text-3xl font-semibold">Restaurante</a>
+    <a href="#" class="text-crema tracking-wider hover:opacity-70">La carta</a>
   </nav>
  
   <!-- MAIN -->
   <main class="max-w-3xl mx-auto px-10 py-16">
  
     <!-- TÍTULO -->
-    <h1 class="font-display text-7xl font-semibold text-terra text-center tracking-widest mb-10">MENU</h1>
+    <h1 class="font-display text-7xl font-semibold text-rojo text-center tracking-widest mb-10">MENU</h1>
  
     <!-- ÍNDICE -->
-    <section class="border-t border-b border-terra py-6 text-center mb-20">
-      <h2 class="font-display italic text-2xl text-terra mb-4">Índice</h2>
+    <section class="border-t border-b border-rojo py-6 text-center mb-20">
+      <h2 class="font-display italic text-2xl text-rojo mb-4">Índice</h2>
       <ul class="space-y-1">
-        <li><a href="#entrantes" class="hover:text-terra">Antipasti</a></li>
-        <li><a href="#pizzas"    class="hover:text-terra">Pizzas</a></li>
-        <li><a href="#pasta"     class="hover:text-terra">Pasta</a></li>
-        <li><a href="#postres"   class="hover:text-terra">Postres</a></li>
+        <li><a href="#entrantes" class="text-rojo hover:text-rojo">Antipasti</a></li>
+        <li><a href="#pizzas"    class="text-rojo hover:text-rojo">Pizzas</a></li>
+        <li><a href="#pasta"     class="text-rojo hover:text-rojo">Pasta</a></li>
+        <li><a href="#postres"   class="text-rojo hover:text-rojo">Postres</a></li>
       </ul>
     </section>
  
     <!-- ENTRANTES -->
     <section id="entrantes" class="mb-20">
-      <h2 class="font-display italic text-2xl text-terra text-center mb-1">Antipasti</h2>
-      <div class="w-16 h-px bg-terra mx-auto mb-12"></div>
+      <h2 class="font-display italic text-2xl text-rojo text-center mb-1">Antipasti</h2>
+      <div class="w-16 h-px bg-rojo mx-auto mb-12"></div>
  
       <div class="flex gap-10 items-start mb-12">
         <div class="flex-1">
-          <h3 class="font-display italic font-semibold text-xl text-green mb-2">Bruschetta al Pomodoro</h3>
+          <h3 class="font-display font-bold italic font-semibold text-xl text-verdeoscuro mb-2">Bruschetta al Pomodoro</h3>
           <p class="text-sm text-gray-600 mb-2"> Pan tostado con tomate fresco y albahaca.</p>
-          <span class="font-display text-terra font-semibold">7 €</span>
+          <span class="font-display text-rojo font-semibold">7 €</span>
         </div>
         <div class="w-44 h-32 bg-imgbg border border-border flex-shrink-0 relative overflow-hidden">
-            <img src="./assets/images/bruschetaalpomodoro.webp" alt="bruscheta">
+            <img src="./assets/images/bruschetaalpomodoro.webp" alt="bruscheta" class="w-full h-full object-cover">
         </div>
       </div>
  
       <div class="flex gap-10 items-start mb-12">
         <div class="flex-1">
-          <h3 class="font-display italic font-semibold text-xl text-green mb-2">Carpaccio de Ternera</h3>
+          <h3 class="font-display font-bold italic font-semibold text-xl text-verdeoscuro mb-2">Carpaccio de Ternera</h3>
           <p class="text-sm text-gray-600 mb-2">Con rúcula, parmesano y alcaparras.</p>
-          <span class="font-display text-terra font-semibold">14 €</span>
+          <span class="font-display text-rojo font-semibold">14 €</span>
         </div>
         <div class="w-44 h-32 bg-imgbg border border-border flex-shrink-0 relative overflow-hidden">
-            <img src="./assets/images/carpacciodeternera.webp">
+            <img src="./assets/images/carpacciodeternera.webp" class="w-full h-full object-cover">
         </div>
       </div>
  
       <div class="flex gap-10 items-start mb-12">
         <div class="flex-1">
-          <h3 class="font-display italic font-semibold text-xl text-green mb-2">Burrata con Prosciutto</h3>
+          <h3 class="font-display font-bold italic font-semibold text-xl text-verdeoscuro mb-2">Burrata con Prosciutto</h3>
           <p class="text-sm text-gray-600 mb-2">Burrata de Puglia con jamón crudo y miel de trufa.</p>
-          <span class="font-display text-terra font-semibold">16 €</span>
+          <span class="font-display text-rojo font-semibold">16 €</span>
         </div>
         <div class="w-44 h-32 bg-imgbg border border-border flex-shrink-0 relative overflow-hidden">
-            <img src="./assets/images/burrataconproscciutto.jpg" alt="burrataconproscciutto">
+            <img src="./assets/images/burrataconproscciutto.jpg" alt="burrataconproscciutto" class="w-full h-full object-cover">
         </div>
       </div>
     </section>
  
     <!-- PIZZAS -->
     <section id="pizzas" class="mb-20">
-      <h2 class="font-display italic text-2xl text-terra text-center mb-1">Pizzas</h2>
-      <div class="w-16 h-px bg-terra mx-auto mb-12"></div>
+      <h2 class="font-display italic text-2xl text-rojo text-center mb-1">Pizzas</h2>
+      <div class="w-16 h-px bg-rojo mx-auto mb-12"></div>
  
       <div class="flex gap-10 items-start mb-12">
         <div class="flex-1">
-          <h3 class="font-display italic font-semibold text-xl text-green mb-2">Margherita</h3>
+          <h3 class="font-display font-bold italic font-semibold text-xl text-verdeoscuro mb-2">Margherita</h3>
           <p class="text-sm text-gray-600 mb-2">Tomate San Marzano, mozzarella fior di latte, albahaca fresca y aceite de oliva. La clásica napolitana en su versión más pura.</p>
-          <span class="font-display text-terra font-semibold">14 €</span>
+          <span class="font-display text-rojo font-semibold">14 €</span>
         </div>
-        <div class="w-44 h-32 bg-imgbg border border-border flex-shrink-0 relative overflow-hidden">
-            <img src="./assets/images/pizzamargarita.jpg" alt="margherita">
+        <div class="w-44 h-32 bg-imgbg border border-border flex-shrink-0 relative overflow-hidden" class="w-full h-full object-cover">
+            <img src="./assets/images/pizzamargarita.jpg" alt="margherita" class="w-full h-full object-cover">
         </div>
       </div>
  
       <div class="flex gap-10 items-start mb-12">
         <div class="flex-1">
-          <h3 class="font-display italic font-semibold text-xl text-green mb-2">Tartufo</h3>
+          <h3 class="font-display font-bold italic font-semibold text-xl text-verdeoscuro mb-2">Tartufo</h3>
           <p class="text-sm text-gray-600 mb-2">Base de crema de trufa blanca, mozzarella, champiñones salteados, parmesano y aceite de trufa negra al finalizar.</p>
-          <span class="font-display text-terra font-semibold">19 €</span>
+          <span class="font-display text-rojo font-semibold">19 €</span>
         </div>
-        <div class="w-44 h-32 bg-imgbg border border-border flex-shrink-0 relative overflow-hidden">
-            <img src="./assets/images/tartauffo.webp" alt="Tartaufo">
+        <div class="w-44 h-32 bg-imgbg border border-border flex-shrink-0 relative overflow-hidden" class="w-full h-full object-cover">
+            <img src="./assets/images/tartauffo.webp" alt="Tartaufo" class="w-full h-full object-cover">
         </div>
       </div>
  
       <div class="flex gap-10 items-start mb-12">
         <div class="flex-1">
-          <h3 class="font-display italic font-semibold text-xl text-green mb-2">Pizza de salchipapa</h3>
+          <h3 class="font-display font-bold italic font-semibold text-xl text-verdeoscuro mb-2">Pizza de salchipapa</h3>
           <p class="text-sm text-gray-600 mb-2">Pizza y salchipapa lujazo.</p>
-          <span class="font-display text-terra font-semibold">182.260 $</span>
+          <span class="font-display text-rojo font-semibold">182.260 $</span>
         </div>
-        <div class="w-44 h-32 bg-imgbg border border-border flex-shrink-0 relative overflow-hidden">
-            <img src="./assets/images/pizzasalchipapa.jpg" alt="salchipapa">
+        <div class="w-44 h-32 bg-imgbg border border-border flex-shrink-0 relative overflow-hidden" class="w-full h-full object-cover">
+            <img src="./assets/images/pizzasalchipapa.jpg" alt="salchipapa" class="w-full h-full object-cover">
         </div>
       </div>
     </section>
  
     <!-- PASTA -->
     <section id="pasta" class="mb-20">
-      <h2 class="font-display italic text-2xl text-terra text-center mb-1">Pasta</h2>
-      <div class="w-16 h-px bg-terra mx-auto mb-12"></div>
+      <h2 class="font-display italic text-2xl text-rojo text-center mb-1">Pasta</h2>
+      <div class="w-16 h-px bg-rojo mx-auto mb-12"></div>
  
       <div class="flex gap-10 items-start mb-12">
         <div class="flex-1">
-          <h3 class="font-display italic font-semibold text-xl text-green mb-2">Cacio e Pepe</h3>
+          <h3 class="font-display font-bold italic font-semibold text-xl text-verdeoscuro mb-2">Cacio e Pepe</h3>
           <p class="text-sm text-gray-600 mb-2">Espagueti con queso Pecorino Romano y pimienta negra recién molida. Un clásico romano de sencillez absoluta y sabor rotundo.</p>
-          <span class="font-display text-terra font-semibold">15 €</span>
+          <span class="font-display text-rojo font-semibold">15 €</span>
         </div>
         <div class="w-44 h-32 bg-imgbg border border-border flex-shrink-0 relative overflow-hidden">
-            <img src="./assets/images/Cacio-e-Pepe.jpg" alt="Cacio e pepe">
+            <img src="./assets/images/Cacio-e-Pepe.jpg" alt="Cacio e pepe" class="w-full h-full object-cover">
         </div>
       </div>
  
       <div class="flex gap-10 items-start mb-12">
         <div class="flex-1">
-          <h3 class="font-display italic font-semibold text-xl text-green mb-2">Tagliatelle al ragù</h3>
+          <h3 class="font-display font-bold italic font-semibold text-xl text-verdeoscuro mb-2">Tagliatelle al ragù</h3>
           <p class="text-sm text-gray-600 mb-2">Pasta fresca al huevo con ragù boloñés cocinado a fuego lento durante cuatro horas con carne de ternera y cerdo.</p>
-          <span class="font-display text-terra font-semibold">17 €</span>
+          <span class="font-display text-rojo font-semibold">17 €</span>
         </div>
         <div class="w-44 h-32 bg-imgbg border border-border flex-shrink-0 relative overflow-hidden">
-           <img src="./assets/images/tagliatelle-al-ragu.jpeg" alt="Tagliatelle">
+           <img src="./assets/images/tagliatelle-al-ragu.jpeg" alt="Tagliatelle" class="w-full h-full object-cover">
         </div>
       </div>
  
       <div class="flex gap-10 items-start mb-12">
         <div class="flex-1">
-          <h3 class="font-display italic font-semibold text-xl text-green mb-2">Gnocchi alla Sorrentina</h3>
+          <h3 class="font-display font-bold italic font-semibold text-xl text-verdeoscuro mb-2">Gnocchi alla Sorrentina</h3>
           <p class="text-sm text-gray-600 mb-2">Ñoquis de patata caseros con salsa de tomate fresco, mozzarella fundida y albahaca, gratinados al horno.</p>
-          <span class="font-display text-terra font-semibold">16 €</span>
+          <span class="font-display text-rojo font-semibold">16 €</span>
         </div>
         <div class="w-44 h-32 bg-imgbg border border-border flex-shrink-0 relative overflow-hidden">
-           <img src="./assets/images/gnocchi-alla-sorrentina.webp" alt="Gnocchi">
+           <img src="./assets/images/gnocchi-alla-sorrentina.webp" alt="Gnocchi" class="w-full h-full object-cover">
         </div>
       </div>
     </section>
  
     <!-- POSTRES -->
     <section id="postres" class="mb-20">
-      <h2 class="font-display italic text-2xl text-terra text-center mb-1">Postres</h2>
-      <div class="w-16 h-px bg-terra mx-auto mb-12"></div>
+      <h2 class="font-display italic text-2xl text-rojo text-center mb-1">Postres</h2>
+      <div class="w-16 h-px bg-rojo mx-auto mb-12"></div>
  
       <div class="flex gap-10 items-start mb-12">
         <div class="flex-1">
           <h3 class="font-display italic font-sem div class="flex gap-10 items-start mb-12">
         <div class="flex-1">
-          <h3 class="font-display italic font-semibold text-xl text-green mb-2">Cannoli siciliani</h3>
+          <h3 class="font-display font-bold italic font-semibold text-xl text-verdeoscuro mb-2">Cannoli siciliani</h3>
           <p class="text-sm text-gray-600 mb-2">Crujientes tubos de masa frita rellenos de ricotta dulce con chips de chocolate negro y ralladura de naranja.</p>
-          <span class="font-display text-terra font-semibold">7 €</span>
+          <span class="font-display text-rojo font-semibold">7 €</span>
         </div>
         <div class="w-44 h-32 bg-imgbg border border-border flex-shrink-0 relative overflow-hidden">
-           <img src="./assets/images/cannolo.webp" alt="Cannoli">
+           <img src="./assets/images/cannolo.webp" alt="Cannoli" class="w-full h-full object-cover">
+        </div>
+      </div>
+      </div>
+      
+      <div class="w-16 h-px bg-rojo mx-auto mb-12"></div>
+      <div class="flex gap-10 items-start mb-12">
+        <div class="flex-1">
+          <h3 class="font-display italic font-sem div class="flex gap-10 items-start mb-12">
+        <div class="flex-1">
+          <h3 class="font-display font-bold italic font-semibold text-xl text-verdeoscuro mb-2">Tiramisu peruano</h3>
+          <p class="text-sm text-gray-600 mb-2">Il Tiramisù è un dolce italiano, fatto di pan di spagna o muffin, bagnati nel caffè e sovrapposti con una miscela montata di uova, zucchero e formaggio mascarpone, e alla fine come decorazione un po' di cacao.</p>
+          <span class="font-display text-rojo font-semibold">8.50 €</span>
+        </div>
+        <div class="w-44 h-32 bg-imgbg border border-border flex-shrink-0 relative overflow-hidden">
+           <img src="./assets/images/tiramisu-peruano.webp" alt="tiramisu-peruano" class="w-full h-full object-cover">
         </div>
       </div>
     </section>
@@ -192,13 +206,13 @@
   </main>
  
   <!-- FOOTER -->
-  <footer class="bg-green px-10 py-7 flex items-center gap-4">
-    <span class="text-cream text-sm tracking-wide">Redes sociales:</span>
+  <footer class="bg-verdeoscuro px-10 py-7 flex items-center gap-4">
+    <span class="text-crema text-sm tracking-wide">Redes sociales:</span>
     <a href="#" class="w-8 h-8 border border-white border-opacity-50 rounded flex items-center justify-center">
-      <svg class="w-4 h-4 fill-cream" viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg>
+      <svg class="w-4 h-4 fill-crema" viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg>
     </a>
     <a href="#" class="w-8 h-8 border border-white border-opacity-50 rounded flex items-center justify-center">
-      <svg class="w-4 h-4 fill-cream" viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8 0 3.2 0 3.6-.1 4.8-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.9.1-3.2 0-3.6 0-4.8-.1-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.3 2.2 12c0-3.2 0-3.6.1-4.8.1-3.2 1.7-4.8 4.9-4.9 1.2-.1 1.6-.1 4.8-.1zM12 0C8.7 0 8.3 0 7.1.1 2.7.3.3 2.7.1 7.1 0 8.3 0 8.7 0 12c0 3.3 0 3.7.1 4.9.2 4.4 2.6 6.8 7 7C8.3 24 8.7 24 12 24c3.3 0 3.7 0 4.9-.1 4.4-.2 6.8-2.6 7-7 .1-1.2.1-1.6.1-4.9 0-3.3 0-3.7-.1-4.9C23.7 2.7 21.3.3 16.9.1 15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4A6.2 6.2 0 0 0 12 5.8zm0 10.2a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.8a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg>
+      <svg class="w-4 h-4 fill-crema" viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8 0 3.2 0 3.6-.1 4.8-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.9.1-3.2 0-3.6 0-4.8-.1-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.3 2.2 12c0-3.2 0-3.6.1-4.8.1-3.2 1.7-4.8 4.9-4.9 1.2-.1 1.6-.1 4.8-.1zM12 0C8.7 0 8.3 0 7.1.1 2.7.3.3 2.7.1 7.1 0 8.3 0 8.7 0 12c0 3.3 0 3.7.1 4.9.2 4.4 2.6 6.8 7 7C8.3 24 8.7 24 12 24c3.3 0 3.7 0 4.9-.1 4.4-.2 6.8-2.6 7-7 .1-1.2.1-1.6.1-4.9 0-3.3 0-3.7-.1-4.9C23.7 2.7 21.3.3 16.9.1 15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4A6.2 6.2 0 0 0 12 5.8zm0 10.2a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.8a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg>
     </a>
   </footer>
  
