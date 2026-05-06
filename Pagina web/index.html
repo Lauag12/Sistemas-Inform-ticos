@@ -7,7 +7,7 @@
     <title>Document</title>
 
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap');
     </style>
 
     <script src="https://cdn.tailwindcss.com"></script>
@@ -29,24 +29,108 @@
     </script>
 </head>
 
-<body class="flex flex-col w-full font-body">
+<body class="flex flex-col w-full font-body bg-crema overflow-x-hidden overflow-y-scroll">
     <header class="w-full">
         <nav class="text-crema w-full h-14 bg-verde flex flex-row space-x-20 items-center justify-center">
-            <a href="./index.html"><h3 class="text-2xl">Inicio</h3></a>
-            <a href="./index.html"><img src="LOGO" alt="logotipo"></a>
-            <a href="./menu.html"><h3 class="text-2xl">La carta</h3></a>
+            <a href="./index.html">
+                <h3 class="text-2xl">Inicio</h3>
+            </a>
+            <a href="./index.html"><img class="h-12" src="./assets/images/logos/logotipo.png" alt="logotipo"></a>
+            <a href="./menu.html">
+                <h3 class="text-2xl">La carta</h3>
+            </a>
         </nav>
     </header>
     <div name="principal">
-        <main class="flex flex-col items-center px-40">
-            <div>
-                <img src="" alt="">
+        <main class="flex flex-col items-center">
+            <div class="h-80 w-full bg-black flex-flex-col items-center">
+                <img class="h-full w-full object-cover" src="./assets/images/pappardelle-bolognese.jpg" alt="">
             </div>
-            <h4 class="text-rojo text-2xl">Il Ristorante</h4>
-            <hr class="border-rojo border-2 rounded-xl w-80">
+            <section class="flex flex-col items-center px-40">
+                <h4 class="text-rojo text-2xl mt-10">Il Ristorante</h4>
+                <hr class="border-rojo border-2 rounded-xl w-80">
+                <p class="text-lg mt-10">
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
+                    pellentesque sem placerat.
+                    In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
+                    Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia
+                    integer nunc posuere.
+                    Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos
+                    himenaeos.
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
+                    pellentesque sem placerat.
+                    In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
+                    Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia
+                    integer nunc posuere.
+                    Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos
+                    himenaeos.
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
+                    pellentesque sem placerat.
+                    In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
+                    Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia
+                    integer nunc posuere.
+                    Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos
+                    himenaeos.
+                </p>
+
+                <h4 class="text-rojo text-2xl mt-20">I sapori caratteristici</h4>
+                <hr class="border-rojo border-2 rounded-xl w-80">
+
+                <section class="flex flex-col">
+                    <article class="flex flex-row w-full h-64 mt-14">
+                        <div class="w-full h-full">
+                            <img class="h-full w-full object-cover" src="./assets/images/pappardelle-bolognese.jpg" alt="">
+                        </div>
+                        <div class="flex flex-col ml-10">
+                            <h4 class="text-2xl text-verde font-bold italic">
+                                Pappardelle Bolognese
+                            </h4>
+                            <p class="text-lg">
+                                El nombre deriva del verbo “pappare” que en italiano se traduce como: engullir. 
+                                Se elaboran con huevo y suelen ser de dos a cuatro centímetros de anchura.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="flex flex-row-reverse w-full h-64 mt-14">
+                        <div class="w-full h-full">
+                            <img class="h-full w-full object-cover" src="./assets/images/pastacarbonara.jpg" alt="">
+                        </div>
+                        <div class="flex flex-col items-end mr-10">
+                            <h4 class="text-2xl text-verde font-bold italic">
+                                Pasta Carbonara
+                            </h4>
+                            <p class="text-lg">
+                                La preparación es parte de una familia de platos de Italia central más antiguos que la carbonara propiamente dicha, 
+                                y que prevén el uso de pasta con quesos, fiambres y pimienta negra, como es el caso de la pasta alla gricia,
+                                 o de pasta con quesos y pimienta negra como en la cacio e pepe, o de pasta con quesos, yemas de huevos y 
+                                 pimienta negra como en la cacio e ova, o de pasta con quesos, huevos, pimienta negra y embutidos como en los 
+                                 strascinati di Cascia, entre otros.
+                            </p>
+
+                        </div>
+                    </article>
+                    <article class="flex flex-row w-full h-64 mt-14">
+                        <div class="w-full h-full">
+                            <img class="h-full w-full object-cover" src="./assets/images/tiramisu-peruano.webp" alt="">
+                        </div>
+                        <div class="flex flex-col ml-10">
+                            <h4 class="text-2xl text-verde font-bold italic">
+                                Tiramisú peruano &copy;
+                            </h4>   
+                            <p class="text-lg">
+                                Un tiramisú se compone siempre de un ingrediente sólido humedecido en café, 
+                                sobre el que se superpone (de forma alterna o no) una crema cuya base son 
+                                huevos batidos con azúcar; se presenta espolvoreado con cacao en polvo.
+                            </p>
+                        </div>
+                    </article>
+                </section>
+            </section>
         </main>
-        <footer class="w-full h-30 bg-verde text-crema mt-20">
-            <p>FOOTER</p>
+        <footer class="w-full h-32 bg-verde text-crema mt-20 p-10">
+            <p>Sígenos en redes sociales...</p>
         </footer>
     </div>
 
