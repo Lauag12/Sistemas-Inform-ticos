@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Il Ristorante</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap');
+    </style>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "rojo": "#bc4749",
+                        "verde": "#386641",
+                        "crema": "#f2e8cf",
+                    },
+                    fontFamily: {
+                        body: ["EB Garamond", "serif"],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="flex flex-col w-full font-body bg-crema overflow-x-hidden overflow-y-scroll">
+    <header class="w-full">
+        <nav class="text-crema w-full h-14 bg-verde flex flex-row space-x-20 items-center justify-center">
+            <a href="./index.html"><img class="h-12" src="./assets/images/logos/logotipo.png" alt="logotipo"></a>
+            <a href="./index.html">
+                <h3 class="text-2xl hover:text-rojo transition-colors">Inicio</h3>
+            </a>
+            <a href="./menu.html">
+                <h3 class="text-2xl hover:text-rojo transition-colors">La carta</h3>
+            </a>
+            <a href="./contacto.html">
+                <h3 class="text-2xl text-rojo">Contacta con nosotros</h3>
+            </a>
+            <a href="./reserva.html">
+                <h3 class="text-2xl hover:text-rojo transition-colors">Reserva</h3>
+            </a>
+        </nav>
+    </header>
+
+    <main class="flex flex-col items-center">
+    <section class="h-60 w-full bg-black relative">
+        <img class="h-full w-full object-cover opacity-60" src="./assets/images/pastacarbonara.jpg" alt="Contacto">
+        <header class="absolute inset-0 flex items-center justify-center">
+            <h1 class="text-crema text-5xl italic font-bold">Dove Siamo & Suggerimenti</h1>
+        </header>
+    </section>
+
+    <section class="w-full max-w-6xl px-10 py-16 flex flex-col md:flex-row gap-16">
+        
+        <article class="flex-1">
+            <h4 class="text-rojo text-3xl mb-2">Encuéntranos</h4>
+            <hr class="border-rojo border-2 rounded-xl w-32 mb-8">
+            
+            <figure class="w-full h-96 rounded-lg overflow-hidden border-4 border-verde shadow-lg mb-6">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.873215234149!2d12.48202971544458!3d41.8902101792212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f604473866291%3A0x67399320e8b15d0a!2sColiseo%20de%20Roma!5e0!3m2!1ses!2ses!4v1700000000000!5m2!1ses!2ses" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </figure>
+
+            <address class="space-y-4 text-verde text-xl not-italic">
+                <p><strong>Dirección:</strong> Via della Conciliazione, 15. Roma, Italia.</p>
+                <p><strong>Teléfono:</strong> <a href="tel:+39061234567" class="hover:underline">+39 06 123 4567</a></p>
+                <p><strong>Email:</strong> <a href="mailto:ciao@ilristorante.it" class="hover:underline">ciao@ilristorante.it</a></p>
+            </address>
+        </article>
+
+        <article class="flex-1 bg-white p-10 rounded-lg shadow-xl border-t-8 border-rojo">
+            <header>
+                <h4 class="text-verde text-3xl mb-2 font-bold">Buzón de Sugerencias</h4>
+                <p class="mb-8 text-gray-600 italic">Tu opinión nos ayuda a mejorar nuestra cocina italiana.</p>
+            </header>
+
+            <form action="#" method="POST" class="flex flex-col space-y-6">
+                <fieldset class="flex flex-col space-y-6 border-none p-0 m-0">
+                    <div>
+                        <label class="block text-rojo font-bold mb-2" for="nombre">Nombre</label>
+                        <input class="w-full bg-crema border-none p-3 rounded focus:ring-2 focus:ring-verde outline-none" type="text" id="nombre" placeholder="Tu nombre...">
+                    </div>
+
+                    <div>
+                        <label class="block text-rojo font-bold mb-2" for="email">Correo Electrónico</label>
+                        <input class="w-full bg-crema border-none p-3 rounded focus:ring-2 focus:ring-verde outline-none" type="email" id="email" placeholder="email@ejemplo.com">
+                    </div>
+
+                    <div>
+                        <label class="block text-rojo font-bold mb-2" for="tipo">Motivo</label>
+                        <select class="w-full bg-crema border-none p-3 rounded focus:ring-2 focus:ring-verde outline-none" id="tipo">
+                            <option>Sugerencia</option>
+                            <option>Felicitación</option>
+                            <option>Queja</option>
+                            <option>Otro</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-rojo font-bold mb-2" for="mensaje">Mensaje</label>
+                        <textarea class="w-full bg-crema border-none p-3 rounded focus:ring-2 focus:ring-verde outline-none h-32" id="mensaje" placeholder="Cuéntanos tu experiencia..."></textarea>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="bg-verde text-crema font-bold py-3 px-6 rounded hover:bg-rojo transition-all duration-300 transform hover:scale-105 uppercase tracking-widest">
+                    Enviar Sugerencia
+                </button>
+            </form>
+        </article>
+
+    </section>
+</main>
+    <footer class="w-full h-32 bg-verde text-crema mt-10 p-10 flex justify-between items-center px-40">
+        <div>
+            <p class="text-xl">Sígenos en redes sociales...</p>
+            <p class="text-sm opacity-70">© 2024 Il Ristorante Italiano - Todos los derechos reservados.</p>
+        </div>
+        <div class="flex space-x-6 text-2xl italic">
+            <span>Instagram</span>
+            <span>Facebook</span>
+        </div>
+    </footer>
+
+</body>
+
+</html>
