@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tu Pedido — Il Ristorante</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: { extend: { colors: { crema: '#f5f0e1', verdeoscuro: '#3a5a40', rojo: '#b5593a', border: '#c8b89a' } } }
+        }
+    </script>
+</head>
+<body class="bg-crema p-10 text-verdeoscuro">
+
+    <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-xl border border-border">
+        <h1 class="text-4xl font-serif italic text-rojo mb-8 border-b pb-4">Resumen de tu Pedido</h1>
+        
+        <div id="contenedor-items" class="space-y-4">
+            </div>
+
+        <div class="mt-10 border-t pt-6">
+            <div class="flex justify-between text-2xl font-bold mb-6">
+                <span>Total a pagar:</span>
+                <span class="text-rojo"><span id="precio-total">0</span>€</span>
+            </div>
+
+            <div class="flex gap-4">
+                <a href="menu.html" class="flex-1 text-center border border-verdeoscuro py-3 rounded hover:bg-gray-100 transition">
+                    Seguir pidiendo
+                </a>
+                <button onclick="finalizarCompra()" class="flex-1 bg-verdeoscuro text-crema py-3 rounded font-bold uppercase tracking-widest hover:opacity-90 transition">
+                    Finalizar Compra
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function pintarCarrito() {
+            const contenedor = document.getElementById('contenedor-items');
+            const totalTxt = document.getElementById('precio-total');
+            const productos = JSON.parse(localStorage.getItem('restaurant-cart')) || [];
+            
+            if (productos.length === 0) {
+                contenedor.innerHTML = "<p class='text-center py-10 text-gray-400'>Tu carrito está vacío.</p>";
+                return;
+            }
+
+            let totalAcumulado = 0;
+            contenedor.innerHTML = '';
+
+            productos.forEach((item, index) => {
+                const subtotal = item.price * item.quantity;
+                totalAcumulado += subtotal;
+
+                contenedor.innerHTML += `
+                    <div class="flex justify-between items-center bg-crema bg-opacity-30 p-4 rounded border border-border">
+                        <div>
+                            <p class="font-bold text-lg">${item.name}</p>
+                            <p class="text-sm text-gray-600">Cantidad: ${item.quantity} x ${item.price}€</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <span class="font-bold">${subtotal.toFixed(2)}€</span>
+                            <button onclick="eliminar(${index})" class="text-rojo text-sm font-bold border border-rojo px-2 py-1 rounded hover:bg-rojo hover:text-white transition">Eliminar</button>
+                        </div>
+                    </div>
+                `;
+            });
+
+            totalTxt.innerText = totalAcumulado.toFixed(2);
+        }
+
+        function eliminar(index) {
+            let productos = JSON.parse(localStorage.getItem('restaurant-cart'));
+            productos.splice(index, 1);
+            localStorage.setItem('restaurant-cart', JSON.stringify(productos));
+            pintarCarrito();
+        }
+
+        function finalizarCompra() {
+            alert("¡Gracias por tu pedido! En 30 minutos estará en tu mesa.");
+            localStorage.removeItem('restaurant-cart');
+            window.location.href = 'index.html';
+        }
+
+        document.addEventListener('DOMContentLoaded', pintarCarrito);
+    </script>
+</body>
+</html>
