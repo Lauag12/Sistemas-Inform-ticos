@@ -1,0 +1,62 @@
+<svg viewBox="0 0 700 860" xmlns="http://www.w3.org/2000/svg" style="background:#fff;">
+  <title>Wireframe — Carrito · Il Ristorante</title>
+  <style>
+    text { font-family: Arial, sans-serif; fill: #555; }
+    .lbl { font-size: 10px; fill: #888; }
+    .box { fill: none; stroke: #555; stroke-width: 1.2; }
+    .bg  { fill: #d9d9d9; stroke: #555; stroke-width: 1.2; }
+    .ln  { stroke: #bbb; stroke-width: 0.8; }
+    .x   { stroke: #aaa; stroke-width: 0.8; }
+  </style>
+
+  <rect x="20" y="20" width="660" height="820" class="box"/>
+  <rect x="20" y="20" width="660" height="820" fill="#f7f7f7" stroke="#555" stroke-width="1.2"/>
+
+  <rect x="60" y="56" width="580" height="52" fill="none" stroke="#555" stroke-width="1.2"/>
+  <rect x="60" y="56" width="580" height="14" fill="#d9d9d9" stroke="#aaa" stroke-width="0.8"/>
+  <rect x="72" y="80" width="300" height="10" fill="#d9d9d9"/>
+  <rect x="72" y="94" width="120" height="8"  fill="#e0e0e0"/>
+  <text class="lbl" x="64" y="126">① título + subtítulo</text>
+
+  <rect x="60" y="140" width="580" height="80" class="box" fill="#fff"/>
+  <rect x="72" y="154" width="340" height="10" fill="#d9d9d9"/>
+  <rect x="72" y="170" width="200" height="8"  fill="#e8e8e8"/>
+  <rect x="530" y="154" width="96" height="26" fill="#d9d9d9" stroke="#aaa" stroke-width="0.8"/>
+  <rect x="536" y="161" width="84" height="12" fill="#bbb"/>
+  <text class="lbl" x="64" y="234">② item 1 — nombre · cantidad × precio · subtotal · botón eliminar</text>
+
+  <rect x="60" y="250" width="580" height="80" class="box" fill="#fff"/>
+  <rect x="72" y="264" width="320" height="10" fill="#d9d9d9"/>
+  <rect x="72" y="280" width="180" height="8"  fill="#e8e8e8"/>
+  <rect x="530" y="264" width="96" height="26" fill="#d9d9d9" stroke="#aaa" stroke-width="0.8"/>
+  <rect x="536" y="271" width="84" height="12" fill="#bbb"/>
+  <text class="lbl" x="64" y="344">③ item 2</text>
+
+  <rect x="60" y="360" width="580" height="80" class="box" fill="#fff"/>
+  <rect x="72" y="374" width="280" height="10" fill="#d9d9d9"/>
+  <rect x="72" y="390" width="160" height="8"  fill="#e8e8e8"/>
+  <rect x="530" y="374" width="96" height="26" fill="#d9d9d9" stroke="#aaa" stroke-width="0.8"/>
+  <rect x="536" y="381" width="84" height="12" fill="#bbb"/>
+  <text class="lbl" x="64" y="454">④ item 3</text>
+
+  <line x1="60" y1="468" x2="640" y2="468" stroke="#aaa" stroke-width="1"/>
+
+  <rect x="60" y="480" width="580" height="56" class="box" fill="#fff"/>
+  <rect x="72" y="498" width="140" height="14" fill="#d9d9d9"/>
+  <rect x="490" y="494" width="136" height="22" fill="#d9d9d9"/>
+  <text class="lbl" x="64" y="550">⑤ total a pagar</text>
+
+  <rect x="60" y="572" width="278" height="48" class="box" fill="#fff"/>
+  <rect x="80" y="589" width="238" height="14" fill="#d9d9d9"/>
+  <text class="lbl" x="64" y="636">⑥ botón "Seguir pidiendo"</text>
+
+  <rect x="362" y="572" width="278" height="48" class="bg"/>
+  <rect x="382" y="589" width="238" height="14" fill="#bbb"/>
+  <text class="lbl" x="366" y="636">⑦ botón "Finalizar compra"</text>
+
+  <text class="lbl" x="64" y="660">⑧ estado vacío (condicional)</text>
+  <rect x="60" y="670" width="580" height="48" class="box" fill="#fff"/>
+  <rect x="220" y="687" width="260" height="14" fill="#e0e0e0"/>
+
+  <text class="lbl" x="64" y="740">⑨ carrito vacío — mensaje centrado</text>
+</svg>
