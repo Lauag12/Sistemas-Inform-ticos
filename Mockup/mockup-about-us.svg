@@ -1,0 +1,161 @@
+<svg viewBox="0 0 680 2080" xmlns="http://www.w3.org/2000/svg" style="background:#f2e8cf;">
+  <title>Mockup About Us — Il Ristorante</title>
+
+  <!-- NAV -->
+  <rect x="0" y="0" width="680" height="36" fill="#386641"/>
+  <rect x="16" y="8" width="20" height="20" rx="3" fill="#f2e8cf" opacity=".35"/>
+  <text x="72"  y="23" font-family="Georgia,serif" font-size="10" fill="#f2e8cf" opacity=".65">Inicio</text>
+  <text x="130" y="23" font-family="Georgia,serif" font-size="10" fill="#f2e8cf" opacity=".65">La carta</text>
+  <text x="205" y="23" font-family="Georgia,serif" font-size="10" fill="#f2e8cf" opacity=".65">Contacta con nosotros</text>
+  <text x="340" y="23" font-family="Georgia,serif" font-size="10" fill="#f2e8cf" opacity=".65">Reserva</text>
+  <text x="406" y="23" font-family="Georgia,serif" font-size="10.5" font-style="italic" fill="#bc4749" font-weight="600">About Us</text>
+
+  <!-- HERO -->
+  <rect x="0" y="36" width="680" height="168" fill="#1e2b1e"/>
+  <rect x="0" y="36" width="680" height="168" fill="#2a3d2a" opacity=".7"/>
+  <rect x="0" y="36" width="680" height="168" fill="#0a120a" opacity=".55"/>
+  <text x="340" y="118" text-anchor="middle" font-family="Georgia,serif" font-size="9.5" fill="#f2e8cf" opacity=".55" letter-spacing="3">ROMA · DAL 1987</text>
+  <text x="340" y="148" text-anchor="middle" font-family="Georgia,serif" font-size="34" font-style="italic" fill="#f2e8cf" font-weight="300">La Nostra Storia</text>
+  <text x="340" y="172" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#f2e8cf" opacity=".4">✦</text>
+
+  <!-- INTRO -->
+  <rect x="0" y="204" width="680" height="148" fill="#f2e8cf"/>
+  <text x="340" y="242" text-anchor="middle" font-family="Georgia,serif" font-size="18" font-style="italic" fill="#bc4749">Il Ristorante</text>
+  <line x1="270" y1="252" x2="340" y2="252" stroke="#bc4749" stroke-width=".8" opacity=".5"/>
+  <text x="340" y="252" text-anchor="middle" font-family="Georgia,serif" font-size="9" fill="#bc4749">✦</text>
+  <line x1="340" y1="252" x2="410" y2="252" stroke="#bc4749" stroke-width=".8" opacity=".5"/>
+  <rect x="120" y="264" width="440" height="8" rx="3" fill="#386641" opacity=".18"/>
+  <rect x="140" y="278" width="400" height="8" rx="3" fill="#386641" opacity=".14"/>
+  <rect x="130" y="292" width="420" height="8" rx="3" fill="#386641" opacity=".14"/>
+  <rect x="155" y="306" width="370" height="8" rx="3" fill="#386641" opacity=".11"/>
+  <rect x="170" y="320" width="340" height="8" rx="3" fill="#386641" opacity=".09"/>
+
+  <!-- STATS -->
+  <rect x="0" y="352" width="680" height="96" fill="#386641"/>
+  <text x="86"  y="391" text-anchor="middle" font-family="Georgia,serif" font-size="28" font-style="italic" fill="#f2e8cf" font-weight="300">37</text>
+  <text x="86"  y="410" text-anchor="middle" font-family="Georgia,serif" font-size="8" fill="#f2e8cf" opacity=".6" letter-spacing="1.5">AÑOS DE HISTORIA</text>
+  <text x="256" y="391" text-anchor="middle" font-family="Georgia,serif" font-size="28" font-style="italic" fill="#f2e8cf" font-weight="300">4</text>
+  <text x="256" y="410" text-anchor="middle" font-family="Georgia,serif" font-size="8" fill="#f2e8cf" opacity=".6" letter-spacing="1.5">GENERACIONES</text>
+  <text x="424" y="391" text-anchor="middle" font-family="Georgia,serif" font-size="28" font-style="italic" fill="#f2e8cf" font-weight="300">18</text>
+  <text x="424" y="410" text-anchor="middle" font-family="Georgia,serif" font-size="8" fill="#f2e8cf" opacity=".6" letter-spacing="1.5">PLATOS DE AUTOR</text>
+  <text x="594" y="391" text-anchor="middle" font-family="Georgia,serif" font-size="22" font-style="italic" fill="#f2e8cf" font-weight="300">★</text>
+  <text x="594" y="410" text-anchor="middle" font-family="Georgia,serif" font-size="8" fill="#f2e8cf" opacity=".6" letter-spacing="1.5">REC. MICHELIN</text>
+  <line x1="170" y1="368" x2="170" y2="428" stroke="#f2e8cf" stroke-width=".5" opacity=".2"/>
+  <line x1="340" y1="368" x2="340" y2="428" stroke="#f2e8cf" stroke-width=".5" opacity=".2"/>
+  <line x1="510" y1="368" x2="510" y2="428" stroke="#f2e8cf" stroke-width=".5" opacity=".2"/>
+
+  <!-- FILOSOFÍA -->
+  <rect x="0" y="448" width="680" height="220" fill="#f2e8cf"/>
+  <text x="52"  y="496" font-family="Georgia,serif" font-size="52" fill="#bc4749" opacity=".15">"</text>
+  <text x="60"  y="514" font-family="Georgia,serif" font-size="13" font-style="italic" fill="#386641">"La cucina è un atto d'amore.</text>
+  <text x="60"  y="532" font-family="Georgia,serif" font-size="13" font-style="italic" fill="#386641">Non cuciniamo per riempire</text>
+  <text x="60"  y="550" font-family="Georgia,serif" font-size="13" font-style="italic" fill="#386641">uno stomaco — cuciniamo</text>
+  <text x="60"  y="568" font-family="Georgia,serif" font-size="13" font-style="italic" fill="#386641">per riempire un'anima."</text>
+  <text x="60"  y="590" font-family="Georgia,serif" font-size="8.5" fill="#bc4749" letter-spacing="1.5">— MARCO CONTI, FUNDADOR</text>
+  <rect x="374" y="466" width="282" height="172" rx="4" fill="#c8d4c8" opacity=".45" stroke="#aaa" stroke-width=".8"/>
+  <line x1="374" y1="466" x2="656" y2="638" stroke="#bbb" stroke-width=".8"/>
+  <line x1="656" y1="466" x2="374" y2="638" stroke="#bbb" stroke-width=".8"/>
+  <rect x="364" y="456" width="282" height="172" rx="4" fill="none" stroke="#bc4749" stroke-width=".7" opacity=".25"/>
+
+  <!-- TIMELINE -->
+  <rect x="0" y="668" width="680" height="380" fill="#e8d9b8"/>
+  <text x="340" y="710" text-anchor="middle" font-family="Georgia,serif" font-size="18" font-style="italic" fill="#bc4749">Nuestros hitos</text>
+  <line x1="280" y1="720" x2="340" y2="720" stroke="#bc4749" stroke-width=".7" opacity=".45"/>
+  <text x="340" y="720" text-anchor="middle" font-family="Georgia,serif" font-size="9" fill="#bc4749">✦</text>
+  <line x1="340" y1="720" x2="400" y2="720" stroke="#bc4749" stroke-width=".7" opacity=".45"/>
+  <line x1="340" y1="736" x2="340" y2="1020" stroke="#386641" stroke-width=".8" opacity=".35"/>
+  <!-- hito 1 -->
+  <text x="300" y="772" text-anchor="end" font-family="Georgia,serif" font-size="12" font-style="italic" fill="#386641" font-weight="600">La apertura</text>
+  <rect x="170" y="778" width="128" height="7" rx="3" fill="#386641" opacity=".12"/>
+  <rect x="180" y="789" width="108" height="7" rx="3" fill="#386641" opacity=".09"/>
+  <circle cx="340" cy="780" r="14" fill="#386641"/>
+  <text x="340" y="784" text-anchor="middle" font-family="Georgia,serif" font-size="8" fill="#f2e8cf" font-style="italic">'87</text>
+  <!-- hito 2 -->
+  <circle cx="340" cy="854" r="14" fill="#bc4749"/>
+  <text x="340" y="858" text-anchor="middle" font-family="Georgia,serif" font-size="8" fill="#f2e8cf" font-style="italic">'95</text>
+  <text x="380" y="846" font-family="Georgia,serif" font-size="12" font-style="italic" fill="#386641" font-weight="600">Primera mención Michelin</text>
+  <rect x="380" y="854" width="130" height="7" rx="3" fill="#386641" opacity=".12"/>
+  <rect x="380" y="865" width="110" height="7" rx="3" fill="#386641" opacity=".09"/>
+  <!-- hito 3 -->
+  <text x="300" y="926" text-anchor="end" font-family="Georgia,serif" font-size="12" font-style="italic" fill="#386641" font-weight="600">Segunda generación</text>
+  <rect x="170" y="932" width="120" height="7" rx="3" fill="#386641" opacity=".12"/>
+  <rect x="180" y="943" width="100" height="7" rx="3" fill="#386641" opacity=".09"/>
+  <circle cx="340" cy="932" r="14" fill="#386641"/>
+  <text x="340" y="936" text-anchor="middle" font-family="Georgia,serif" font-size="8" fill="#f2e8cf" font-style="italic">'08</text>
+  <!-- hito 4 -->
+  <circle cx="340" cy="1004" r="14" fill="#bc4749"/>
+  <text x="340" y="1008" text-anchor="middle" font-family="Georgia,serif" font-size="7.5" fill="#f2e8cf" font-style="italic">Hoy</text>
+  <text x="380" y="996" font-family="Georgia,serif" font-size="12" font-style="italic" fill="#386641" font-weight="600">Tradición viva</text>
+  <rect x="380" y="1004" width="120" height="7" rx="3" fill="#386641" opacity=".12"/>
+  <rect x="380" y="1015" width="100" height="7" rx="3" fill="#386641" opacity=".09"/>
+
+  <!-- EQUIPO -->
+  <rect x="0" y="1048" width="680" height="280" fill="#f2e8cf"/>
+  <text x="340" y="1088" text-anchor="middle" font-family="Georgia,serif" font-size="18" font-style="italic" fill="#bc4749">Il Nostro Team</text>
+  <line x1="280" y1="1098" x2="340" y2="1098" stroke="#bc4749" stroke-width=".7" opacity=".45"/>
+  <text x="340" y="1098" text-anchor="middle" font-family="Georgia,serif" font-size="9" fill="#bc4749">✦</text>
+  <line x1="340" y1="1098" x2="400" y2="1098" stroke="#bc4749" stroke-width=".7" opacity=".45"/>
+  <!-- card 1 -->
+  <circle cx="113" cy="1162" r="44" fill="#c8d4c8" opacity=".6" stroke="#386641" stroke-width="2.5"/>
+  <text x="113" y="1166" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#386641" opacity=".5">LC</text>
+  <text x="113" y="1222" text-anchor="middle" font-family="Georgia,serif" font-size="13" font-style="italic" fill="#386641" font-weight="600">Luca Conti</text>
+  <text x="113" y="1237" text-anchor="middle" font-family="Georgia,serif" font-size="8" fill="#bc4749" letter-spacing="1.5">CHEF EJECUTIVO</text>
+  <rect x="50"  y="1248" width="126" height="6" rx="3" fill="#386641" opacity=".12"/>
+  <rect x="58"  y="1258" width="110" height="6" rx="3" fill="#386641" opacity=".09"/>
+  <!-- card 2 -->
+  <circle cx="340" cy="1162" r="44" fill="#c8d4c8" opacity=".6" stroke="#386641" stroke-width="2.5"/>
+  <text x="340" y="1166" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#386641" opacity=".5">SR</text>
+  <text x="340" y="1222" text-anchor="middle" font-family="Georgia,serif" font-size="13" font-style="italic" fill="#386641" font-weight="600">Sofia Ricci</text>
+  <text x="340" y="1237" text-anchor="middle" font-family="Georgia,serif" font-size="8" fill="#bc4749" letter-spacing="1.5">SOMMELIER</text>
+  <rect x="277" y="1248" width="126" height="6" rx="3" fill="#386641" opacity=".12"/>
+  <rect x="285" y="1258" width="110" height="6" rx="3" fill="#386641" opacity=".09"/>
+  <!-- card 3 -->
+  <circle cx="567" cy="1162" r="44" fill="#c8d4c8" opacity=".6" stroke="#386641" stroke-width="2.5"/>
+  <text x="567" y="1166" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#386641" opacity=".5">AF</text>
+  <text x="567" y="1222" text-anchor="middle" font-family="Georgia,serif" font-size="13" font-style="italic" fill="#386641" font-weight="600">Antonio Ferrari</text>
+  <text x="567" y="1237" text-anchor="middle" font-family="Georgia,serif" font-size="8" fill="#bc4749" letter-spacing="1.5">MAÎTRE DE SALA</text>
+  <rect x="504" y="1248" width="126" height="6" rx="3" fill="#386641" opacity=".12"/>
+  <rect x="512" y="1258" width="110" height="6" rx="3" fill="#386641" opacity=".09"/>
+
+  <!-- VALORES -->
+  <rect x="0" y="1328" width="680" height="280" fill="#386641"/>
+  <text x="340" y="1368" text-anchor="middle" font-family="Georgia,serif" font-size="18" font-style="italic" fill="#f2e8cf">I Nostri Valori</text>
+  <line x1="280" y1="1378" x2="340" y2="1378" stroke="#f2e8cf" stroke-width=".7" opacity=".3"/>
+  <text x="340" y="1378" text-anchor="middle" font-family="Georgia,serif" font-size="9" fill="#f2e8cf" opacity=".4">✦</text>
+  <line x1="340" y1="1378" x2="400" y2="1378" stroke="#f2e8cf" stroke-width=".7" opacity=".3"/>
+  <!-- valor 1 -->
+  <circle cx="113" cy="1432" r="22" fill="none" stroke="#f2e8cf" stroke-width="1" opacity=".4"/>
+  <text x="113" y="1436" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#f2e8cf" opacity=".7">◇</text>
+  <text x="113" y="1472" text-anchor="middle" font-family="Georgia,serif" font-size="13" font-style="italic" fill="#f2e8cf">Autenticidad</text>
+  <rect x="52"  y="1483" width="122" height="6" rx="3" fill="#f2e8cf" opacity=".18"/>
+  <rect x="58"  y="1493" width="110" height="6" rx="3" fill="#f2e8cf" opacity=".13"/>
+  <rect x="64"  y="1503" width="98"  height="6" rx="3" fill="#f2e8cf" opacity=".10"/>
+  <!-- valor 2 -->
+  <circle cx="340" cy="1432" r="22" fill="none" stroke="#f2e8cf" stroke-width="1" opacity=".4"/>
+  <text x="340" y="1436" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#f2e8cf" opacity=".7">◇</text>
+  <text x="340" y="1472" text-anchor="middle" font-family="Georgia,serif" font-size="13" font-style="italic" fill="#f2e8cf">Producto</text>
+  <rect x="279" y="1483" width="122" height="6" rx="3" fill="#f2e8cf" opacity=".18"/>
+  <rect x="285" y="1493" width="110" height="6" rx="3" fill="#f2e8cf" opacity=".13"/>
+  <rect x="291" y="1503" width="98"  height="6" rx="3" fill="#f2e8cf" opacity=".10"/>
+  <!-- valor 3 -->
+  <circle cx="567" cy="1432" r="22" fill="none" stroke="#f2e8cf" stroke-width="1" opacity=".4"/>
+  <text x="567" y="1436" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#f2e8cf" opacity=".7">◇</text>
+  <text x="567" y="1472" text-anchor="middle" font-family="Georgia,serif" font-size="13" font-style="italic" fill="#f2e8cf">Hospitalidad</text>
+  <rect x="506" y="1483" width="122" height="6" rx="3" fill="#f2e8cf" opacity=".18"/>
+  <rect x="512" y="1493" width="110" height="6" rx="3" fill="#f2e8cf" opacity=".13"/>
+  <rect x="518" y="1503" width="98"  height="6" rx="3" fill="#f2e8cf" opacity=".10"/>
+
+  <!-- CTA -->
+  <rect x="0" y="1608" width="680" height="140" fill="#f2e8cf"/>
+  <text x="340" y="1654" text-anchor="middle" font-family="Georgia,serif" font-size="9" fill="#888" letter-spacing="2">¿LISTO PARA VISITARNOS?</text>
+  <text x="340" y="1678" text-anchor="middle" font-family="Georgia,serif" font-size="22" font-style="italic" fill="#386641">Reserva tu mesa</text>
+  <rect x="275" y="1696" width="130" height="34" rx="4" fill="#bc4749"/>
+  <text x="340" y="1718" text-anchor="middle" font-family="Georgia,serif" font-size="9.5" fill="#f2e8cf" letter-spacing="2">HACER UNA RESERVA</text>
+
+  <!-- FOOTER -->
+  <rect x="0" y="1748" width="680" height="80" fill="#386641"/>
+  <text x="48"  y="1784" font-family="Georgia,serif" font-size="12" fill="#f2e8cf">Sígenos en redes sociales...</text>
+  <text x="48"  y="1804" font-family="Georgia,serif" font-size="9" fill="#f2e8cf" opacity=".55">© 2024 Il Ristorante Italiano — Todos los derechos reservados.</text>
+  <text x="570" y="1784" text-anchor="end" font-family="Georgia,serif" font-size="10" font-style="italic" fill="#f2e8cf" opacity=".75">Instagram</text>
+  <text x="632" y="1784" text-anchor="end" font-family="Georgia,serif" font-size="10" font-style="italic" fill="#f2e8cf" opacity=".75">Facebook</text>
+</svg>
