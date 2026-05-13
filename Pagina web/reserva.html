@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva - Il Ristorante</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap');
+    </style>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "rojo": "#bc4749",
+                        "verde": "#386641",
+                        "crema": "#f2e8cf",
+                    },
+                    fontFamily: {
+                        body: ["EB Garamond", "serif"],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="flex flex-col w-full font-body bg-crema overflow-x-hidden overflow-y-scroll">
+    <header class="w-full">
+        <nav class="text-crema w-full h-14 bg-verde flex flex-row space-x-20 items-center justify-center">
+            <a href="./index.html"><img class="h-12" src="./assets/images/logos/logotipo.png" alt="logotipo"></a>
+            <a href="./index.html">
+                <h3 class="text-2xl hover:text-rojo transition-colors">Inicio</h3>
+            </a>
+            <a href="./menu.html">
+                <h3 class="text-2xl hover:text-rojo transition-colors">La carta</h3>
+            </a>
+            <a href="./contacto.html">
+                <h3 class="text-2xl hover:text-rojo transition-colors">Contacta con nosotros</h3>
+            </a>
+            <a href="./reserva.html">
+                <h3 class="text-2xl text-rojo">Reserva</h3>
+            </a>
+        </nav>
+    </header>
+
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --cream: #F2E8CF;
+            --green: #386641;
+            --green-dark: #2a4e31;
+            --green-light: #4a8055;
+            --red: #BC4749;
+            --bg: #F2E8CF;
+            --border: rgba(56,102,65,0.2);
+            --text-main: #1e2e20;
+            --text-muted: rgba(30,46,32,0.55);
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 2rem 5rem;
+        }
+
+        .section-title {
+            font-family: 'EB Garamond', serif;
+            font-size: 1.9rem;
+            font-weight: 400;
+            letter-spacing: 0.03em;
+            color: var(--green);
+            margin-bottom: 0.6rem;
+        }
+
+        .section-rule {
+            display: block;
+            width: 3rem;
+            height: 1px;
+            background: var(--green);
+            margin-bottom: 1.8rem;
+            opacity: 0.4;
+        }
+
+        .intro-text { padding: 4rem 0 3.5rem; max-width: 640px; }
+        .intro-text p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.85;
+            margin-bottom: 1rem;
+        }
+
+        .form-section { padding: 3.5rem 0 2rem; }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.6rem 2rem;
+        }
+
+        .form-group { display: flex; flex-direction: column; gap: 0.5rem; }
+        .form-group.full { grid-column: 1 / -1; }
+
+        label {
+            font-size: 0.72rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--green);
+            font-weight: 500;
+        }
+
+        input, select, textarea {
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid rgba(56,102,65,0.3);
+            color: var(--text-main);
+            font-family: 'EB Garamond', serif;
+            font-size: 0.95rem;
+            font-weight: 300;
+            padding: 0.75rem 0;
+            outline: none;
+            width: 100%;
+            transition: border-color 0.2s;
+            -webkit-appearance: none;
+            appearance: none;
+            border-radius: 0;
+        }
+
+        select {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23386641' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 0 center;
+            padding-right: 1.5rem;
+            cursor: pointer;
+        }
+
+        select option { background: #F2E8CF; color: #1e2e20; }
+        input:focus, select:focus, textarea:focus { border-bottom-color: var(--green); }
+        input::placeholder, textarea::placeholder { color: rgba(30,46,32,0.25); font-weight: 300; }
+
+        textarea {
+            resize: vertical;
+            min-height: 90px;
+            border: 1px solid rgba(56,102,65,0.2);
+            padding: 0.75rem;
+            background: rgba(56,102,65,0.04);
+            border-radius: 3px;
+        }
+        textarea:focus { border-color: var(--green); }
+
+        .horario-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(88px, 1fr));
+            gap: 0.6rem;
+            margin-top: 0.4rem;
+        }
+
+        .horario-btn {
+            background: white;
+            border: 1.5px solid rgba(56,102,65,0.35);
+            color: var(--green);
+            font-family: 'EB Garamond', serif;
+            font-size: 0.9rem;
+            font-weight: 400;
+            letter-spacing: 0.06em;
+            padding: 0.7rem 0.5rem;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: all 0.18s;
+        }
+
+        .horario-btn:hover {
+            background: var(--green);
+            border-color: var(--green);
+            color: var(--cream);
+            transform: translateY(-1px);
+        }
+
+        .horario-btn.selected {
+            background: var(--green);
+            border-color: var(--green);
+            color: var(--cream);
+            font-weight: 500;
+        }
+
+        .divider {
+            text-align: center;
+            color: var(--green);
+            opacity: 0.3;
+            letter-spacing: 0.5em;
+            margin: 2.5rem 0;
+            font-size: 0.9rem;
+        }
+
+        .submit-area {
+            margin-top: 3rem;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-reservar {
+            background: var(--red);
+            border: none;
+            color: #F2E8CF;
+            font-family: 'EB Garamond', serif;
+            font-size: 0.85rem;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            padding: 1.1rem 3.2rem;
+            cursor: pointer;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: all 0.22s;
+            box-shadow: 0 4px 18px rgba(188,71,73,0.25);
+        }
+
+        .btn-reservar:hover {
+            filter: brightness(1.1);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 24px rgba(188,71,73,0.35);
+        }
+
+        .btn-reservar:active { transform: translateY(0); }
+        .btn-reservar:disabled { opacity: 0.5; cursor: default; transform: none; box-shadow: none; }
+
+        .submit-note {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+            max-width: 300px;
+        }
+
+        .success-msg {
+            display: none;
+            background: rgba(56,102,65,0.08);
+            border: 1px solid rgba(56,102,65,0.3);
+            padding: 1.5rem 2rem;
+            margin-top: 2rem;
+            font-family: 'EB Garamond', serif;
+            font-size: 1.15rem;
+            font-weight: 400;
+            font-style: italic;
+            color: var(--green);
+            letter-spacing: 0.02em;
+            border-radius: 4px;
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 0 1.2rem 4rem; }
+            .form-grid { grid-template-columns: 1fr; }
+            .form-group.full { grid-column: 1; }
+            .btn-reservar { width: 100%; }
+        }
+    </style>
+
+    <div class="container">
+
+        <section class="intro-text">
+            <h2 class="section-title">Planifique su visita</h2>
+            <span class="section-rule"></span>
+            <p>Nos complace acogerle en nuestra mesa. Para garantizar la mejor experiencia posible, le pedimos que realice su reserva con antelación. Nuestro equipo se encargará de preparar cada detalle para que su velada sea especial.</p>
+            <p>Para grupos de más de ocho personas o celebraciones privadas, le invitamos a contactarnos directamente por teléfono o correo electrónico para acordar los detalles.</p>
+        </section>
+
+        <section class="form-section">
+            <h2 class="section-title">Su reserva</h2>
+            <span class="section-rule"></span>
+
+            <form id="reserva-form" onsubmit="handleSubmit(event)">
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" placeholder="Su nombre completo" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" placeholder="+34 000 000 000" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" placeholder="correo@ejemplo.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="personas">Número de comensales</label>
+                        <select id="personas" required>
+                            <option value="" disabled selected>Seleccione</option>
+                            <option>1 persona</option>
+                            <option>2 personas</option>
+                            <option>3 personas</option>
+                            <option>4 personas</option>
+                            <option>5 personas</option>
+                            <option>6 personas</option>
+                            <option>7 personas</option>
+                            <option>8 personas</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fecha">Fecha</label>
+                        <input type="date" id="fecha" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="zona">Zona preferida</label>
+                        <select id="zona">
+                            <option value="" disabled selected>Sin preferencia</option>
+                            <option>Terraza exterior</option>
+                            <option>Salón principal</option>
+                            <option>Rincón privado</option>
+                            <option>Barra del chef</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group full">
+                        <label>Hora</label>
+                        <div class="horario-grid">
+                            <button type="button" class="horario-btn" onclick="selectHora(this)">13:00</button>
+                            <button type="button" class="horario-btn" onclick="selectHora(this)">13:30</button>
+                            <button type="button" class="horario-btn" onclick="selectHora(this)">14:00</button>
+                            <button type="button" class="horario-btn" onclick="selectHora(this)">14:30</button>
+                            <button type="button" class="horario-btn" onclick="selectHora(this)">15:00</button>
+                            <button type="button" class="horario-btn" onclick="selectHora(this)">20:30</button>
+                            <button type="button" class="horario-btn" onclick="selectHora(this)">21:00</button>
+                            <button type="button" class="horario-btn" onclick="selectHora(this)">21:30</button>
+                            <button type="button" class="horario-btn" onclick="selectHora(this)">22:00</button>
+                            <button type="button" class="horario-btn" onclick="selectHora(this)">22:30</button>
+                        </div>
+                    </div>
+
+                    <div class="form-group full">
+                        <label for="notas">Peticiones especiales</label>
+                        <textarea id="notas" placeholder="Alergias, celebraciones, preferencias de mesa…"></textarea>
+                    </div>
+
+                </div>
+
+                <div class="submit-area">
+                    <button type="submit" class="btn-reservar" id="btn-submit">Solicitar reserva</button>
+                    <p class="submit-note" id="submit-note">Recibirá una confirmación por correo en las próximas horas. Su reserva quedará confirmada una vez que nuestro equipo la valide.</p>
+                </div>
+
+                <div class="success-msg" id="success-msg">
+                    Gracias — hemos recibido su solicitud. Nos pondremos en contacto con usted a la brevedad para confirmar los detalles de su reserva.
+                </div>
+            </form>
+        </section>
+
+        <div class="divider">· · ·</div>
+
+    </div>
+
+    <footer class="w-full h-32 bg-verde text-crema mt-10 p-10 flex justify-between items-center px-40">
+        <div>
+            <p class="text-xl">Sígenos en redes sociales...</p>
+            <p class="text-sm opacity-70">© 2024 Il Ristorante Italiano - Todos los derechos reservados.</p>
+        </div>
+        <div class="flex space-x-6 text-2xl italic">
+            <span>Instagram</span>
+            <span>Facebook</span>
+        </div>
+    </footer>
+
+    <script>
+        function selectHora(btn) {
+            document.querySelectorAll('.horario-btn').forEach(b => b.classList.remove('selected'));
+            btn.classList.add('selected');
+        }
+
+        function handleSubmit(e) {
+            e.preventDefault();
+            const btn = document.getElementById('btn-submit');
+            const note = document.getElementById('submit-note');
+            const msg = document.getElementById('success-msg');
+            btn.disabled = true;
+            note.style.display = 'none';
+            msg.style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
