@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Il Ristorante</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,600&display=swap');
+    </style>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "rojo": "#bc4749",
+                        "verde": "#386641",
+                        "crema": "#f2e8cf",
+                        "verde-dark": "#2a4e31",
+                        "crema-dark": "#e8d9b8",
+                    },
+                    fontFamily: {
+                        body: ["EB Garamond", "serif"],
+                        display: ["Cormorant Garamond", "serif"],
+                    },
+                },
+            },
+        };
+    </script>
+
+    <style>
+        /* ── Fade-in on scroll ── */
+        .reveal {
+            opacity: 0;
+            transform: translateY(28px);
+            transition: opacity 0.75s ease, transform 0.75s ease;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .reveal-delay-1 { transition-delay: 0.12s; }
+        .reveal-delay-2 { transition-delay: 0.24s; }
+        .reveal-delay-3 { transition-delay: 0.36s; }
+
+        /* ── Hero parallax feel ── */
+        .hero-img {
+            transform: scale(1.08);
+            transition: transform 8s ease;
+        }
+        .hero-img.loaded { transform: scale(1); }
+
+        /* ── Timeline line ── */
+        .timeline-line {
+            position: absolute;
+            left: 50%;
+            top: 0; bottom: 0;
+            width: 1px;
+            background: linear-gradient(to bottom, transparent, #386641 15%, #386641 85%, transparent);
+            transform: translateX(-50%);
+        }
+
+        /* ── Stat counter animation ── */
+        @keyframes countUp {
+            from { opacity: 0; transform: translateY(10px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        .stat-num { animation: countUp 0.6s ease both; }
+
+        /* ── Quote ornament ── */
+        .ornament {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 6rem;
+            line-height: 0;
+            color: #bc4749;
+            opacity: 0.18;
+            position: absolute;
+        }
+
+        /* ── Team card hover ── */
+        .team-card:hover .team-overlay {
+            opacity: 1;
+        }
+        .team-overlay {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        /* ── Horizontal rule with diamond ── */
+        .rule-diamond {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: #bc4749;
+        }
+        .rule-diamond::before,
+        .rule-diamond::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: #bc4749;
+            opacity: 0.4;
+        }
+    </style>
+</head>
+
+<body class="flex flex-col w-full font-body bg-crema overflow-x-hidden overflow-y-scroll">
+
+    <!-- ══════════════════════════════════════════
+         NAV — identical to contacto.html / reserva.html
+    ══════════════════════════════════════════ -->
+    <header class="w-full">
+        <nav class="text-crema w-full h-14 bg-verde flex flex-row space-x-20 items-center justify-center">
+            <a href="./index.html"><img class="h-12" src="./assets/images/logos/logotipo.png" alt="logotipo"></a>
+            <a href="./index.html">
+                <h3 class="text-2xl hover:text-rojo transition-colors">Inicio</h3>
+            </a>
+            <a href="./menu.html">
+                <h3 class="text-2xl hover:text-rojo transition-colors">La carta</h3>
+            </a>
+            <a href="./contacto.html">
+                <h3 class="text-2xl hover:text-rojo transition-colors">Contacta con nosotros</h3>
+            </a>
+            <a href="./reserva.html">
+                <h3 class="text-2xl hover:text-rojo transition-colors">Reserva</h3>
+            </a>
+            <a href="./about-us.html">
+                <h3 class="text-2xl text-rojo">About Us</h3>
+            </a>
+        </nav>
+    </header>
+
+    <main class="flex flex-col items-center">
+
+        <!-- ══════════════════════════════════════════
+             HERO
+        ══════════════════════════════════════════ -->
+        <section class="h-72 w-full bg-black relative overflow-hidden">
+            <img class="hero-img h-full w-full object-cover opacity-55"
+                 src="./assets/images/pappardelle-bolognese.jpg"
+                 alt="Interior de Il Ristorante"
+                 onload="this.classList.add('loaded')">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/30 to-black/60"></div>
+            <header class="absolute inset-0 flex flex-col items-center justify-center gap-3">
+                <p class="text-crema/70 tracking-[0.3em] text-sm uppercase font-display">Roma · Dal 1987</p>
+                <h1 class="text-crema font-display text-6xl italic font-light">La Nostra Storia</h1>
+                <div class="rule-diamond w-48 mt-2" style="color: #f2e8cf; opacity: 0.5;">
+                    <span style="font-family:'Cormorant Garamond'; font-size:1.1rem;">✦</span>
+                </div>
+            </header>
+        </section>
+
+        <!-- ══════════════════════════════════════════
+             INTRO — quiénes somos
+        ══════════════════════════════════════════ -->
+        <section class="w-full max-w-4xl px-10 py-20 text-center reveal">
+            <h2 class="text-rojo font-display text-4xl italic mb-3">Il Ristorante</h2>
+            <div class="rule-diamond w-40 mx-auto mb-10">
+                <span class="text-rojo" style="font-family:'Cormorant Garamond';">✦</span>
+            </div>
+            <p class="text-verde text-xl leading-relaxed max-w-2xl mx-auto">
+                Fundado en el corazón de Roma en 1987, <em>Il Ristorante</em> nació del sueño de la familia Conti: 
+                compartir la autenticidad de la cocina italiana con quienes saben apreciarla. Más de tres décadas después, 
+                cada plato que sale de nuestra cocina sigue llevando el mismo cuidado, la misma pasión y los mismos 
+                productos de siempre.
+            </p>
+        </section>
+
+        <!-- ══════════════════════════════════════════
+             STATS
+        ══════════════════════════════════════════ -->
+        <section class="w-full bg-verde py-14">
+            <div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-crema px-10">
+                <div class="reveal stat-num">
+                    <p class="font-display text-6xl italic font-light">37</p>
+                    <p class="text-sm tracking-widest uppercase mt-1 opacity-75">Años de historia</p>
+                </div>
+                <div class="reveal reveal-delay-1 stat-num">
+                    <p class="font-display text-6xl italic font-light">4</p>
+                    <p class="text-sm tracking-widest uppercase mt-1 opacity-75">Generaciones</p>
+                </div>
+                <div class="reveal reveal-delay-2 stat-num">
+                    <p class="font-display text-6xl italic font-light">18</p>
+                    <p class="text-sm tracking-widest uppercase mt-1 opacity-75">Platos de autor</p>
+                </div>
+                <div class="reveal reveal-delay-3 stat-num">
+                    <p class="font-display text-6xl italic font-light">★</p>
+                    <p class="text-sm tracking-widest uppercase mt-1 opacity-75">Recomendado Michelin</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════
+             NUESTRA FILOSOFÍA (cita + imagen)
+        ══════════════════════════════════════════ -->
+        <section class="w-full max-w-6xl px-10 py-20 flex flex-col md:flex-row gap-16 items-center">
+
+            <div class="flex-1 reveal">
+                <div class="relative py-6 px-8">
+                    <span class="ornament top-0 left-0 leading-none">"</span>
+                    <blockquote class="font-display text-2xl italic text-verde leading-relaxed relative z-10 pl-4">
+                        La cucina è un atto d'amore. Non cuciniamo per riempire uno stomaco — cuciniamo per riempire un'anima.
+                    </blockquote>
+                    <p class="text-rojo mt-5 text-sm tracking-widest uppercase pl-4">— Marco Conti, fundador</p>
+                </div>
+            </div>
+
+            <div class="flex-1 reveal reveal-delay-1">
+                <div class="relative">
+                    <div class="absolute -top-4 -left-4 w-full h-full border-2 border-rojo opacity-20 rounded"></div>
+                    <img class="w-full h-80 object-cover rounded shadow-xl relative z-10"
+                         src="./assets/images/pastacarbonara.jpg"
+                         alt="Cocina de Il Ristorante">
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════
+             TIMELINE — historia
+        ══════════════════════════════════════════ -->
+        <section class="w-full bg-crema-dark py-20 px-10">
+            <div class="max-w-4xl mx-auto">
+
+                <h2 class="text-rojo font-display text-4xl italic text-center mb-3 reveal">Nuestros hitos</h2>
+                <div class="rule-diamond w-48 mx-auto mb-16 reveal">
+                    <span class="text-rojo" style="font-family:'Cormorant Garamond';">✦</span>
+                </div>
+
+                <div class="relative">
+                    <div class="timeline-line hidden md:block"></div>
+
+                    <!-- 1987 -->
+                    <div class="flex flex-col md:flex-row items-center gap-8 mb-14 reveal">
+                        <div class="flex-1 md:text-right">
+                            <h3 class="text-verde font-display text-xl italic font-semibold">La apertura</h3>
+                            <p class="text-gray-600 text-sm mt-1 leading-relaxed">Marco y Giulia Conti abren las puertas del local en Via della Conciliazione, con solo ocho mesas y una carta escrita a mano.</p>
+                        </div>
+                        <div class="w-12 h-12 rounded-full bg-verde text-crema flex items-center justify-center font-display italic text-sm font-semibold flex-shrink-0 shadow-md z-10">
+                            '87
+                        </div>
+                        <div class="flex-1"></div>
+                    </div>
+
+                    <!-- 1995 -->
+                    <div class="flex flex-col md:flex-row items-center gap-8 mb-14 reveal">
+                        <div class="flex-1"></div>
+                        <div class="w-12 h-12 rounded-full bg-rojo text-crema flex items-center justify-center font-display italic text-sm font-semibold flex-shrink-0 shadow-md z-10">
+                            '95
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-verde font-display text-xl italic font-semibold">Primera mención Michelin</h3>
+                            <p class="text-gray-600 text-sm mt-1 leading-relaxed">La Guía Michelin incluye <em>Il Ristorante</em> entre sus recomendaciones, reconociendo la autenticidad de sus recetas tradicionales.</p>
+                        </div>
+                    </div>
+
+                    <!-- 2008 -->
+                    <div class="flex flex-col md:flex-row items-center gap-8 mb-14 reveal">
+                        <div class="flex-1 md:text-right">
+                            <h3 class="text-verde font-display text-xl italic font-semibold">La segunda generación</h3>
+                            <p class="text-gray-600 text-sm mt-1 leading-relaxed">Luca Conti, tras formarse en Lyon y Nápoles, toma las riendas de la cocina e introduce los platos de autor que hoy son emblema del restaurante.</p>
+                        </div>
+                        <div class="w-12 h-12 rounded-full bg-verde text-crema flex items-center justify-center font-display italic text-sm font-semibold flex-shrink-0 shadow-md z-10">
+                            '08
+                        </div>
+                        <div class="flex-1"></div>
+                    </div>
+
+                    <!-- Hoy -->
+                    <div class="flex flex-col md:flex-row items-center gap-8 reveal">
+                        <div class="flex-1"></div>
+                        <div class="w-12 h-12 rounded-full bg-rojo text-crema flex items-center justify-center font-display italic text-xs font-semibold flex-shrink-0 shadow-md z-10">
+                            Hoy
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-verde font-display text-xl italic font-semibold">Tradición viva</h3>
+                            <p class="text-gray-600 text-sm mt-1 leading-relaxed">Con más de 37 años de historia, seguimos recibiendo a nuestros comensales con la misma calidez del primer día.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════
+             EQUIPO
+        ══════════════════════════════════════════ -->
+        <section class="w-full max-w-6xl px-10 py-20">
+            <h2 class="text-rojo font-display text-4xl italic text-center mb-3 reveal">Il Nostro Team</h2>
+            <div class="rule-diamond w-48 mx-auto mb-14 reveal">
+                <span class="text-rojo" style="font-family:'Cormorant Garamond';">✦</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+                <!-- Chef -->
+                <article class="team-card flex flex-col items-center text-center reveal">
+                    <div class="relative w-44 h-44 mb-5">
+                        <div class="w-full h-full rounded-full overflow-hidden border-4 border-verde shadow-lg">
+                            <img class="w-full h-full object-cover"
+                                 src="./assets/images/team/luca.avif"
+                                 alt="Luca Conti">
+                        </div>
+                        <div class="team-overlay absolute inset-0 rounded-full bg-verde/80 flex items-center justify-center">
+                            <p class="text-crema font-display italic text-sm px-4">"La pasta es el alma de Italia."</p>
+                        </div>
+                    </div>
+                    <h3 class="text-verde font-display text-2xl italic font-semibold">Luca Conti</h3>
+                    <p class="text-rojo text-sm tracking-widest uppercase mt-1">Chef Ejecutivo</p>
+                    <p class="text-gray-500 text-sm mt-3 leading-relaxed max-w-xs">Formado en el Institut Paul Bocuse y curtido en los fogones de Nápoles, Luca fusiona tradición y técnica con una sensibilidad única.</p>
+                </article>
+
+                <!-- Sommelier -->
+                <article class="team-card flex flex-col items-center text-center reveal reveal-delay-1">
+                    <div class="relative w-44 h-44 mb-5">
+                        <div class="w-full h-full rounded-full overflow-hidden border-4 border-verde shadow-lg">
+                            <img class="w-full h-full object-cover"
+                                 src="./assets/images/team/sofia.avif"
+                                 alt="Sofia Ricci">
+                        </div>
+                        <div class="team-overlay absolute inset-0 rounded-full bg-verde/80 flex items-center justify-center">
+                            <p class="text-crema font-display italic text-sm px-4">"El vino correcto transforma una cena en un recuerdo."</p>
+                        </div>
+                    </div>
+                    <h3 class="text-verde font-display text-2xl italic font-semibold">Sofia Ricci</h3>
+                    <p class="text-rojo text-sm tracking-widest uppercase mt-1">Sommelier</p>
+                    <p class="text-gray-500 text-sm mt-3 leading-relaxed max-w-xs">Con más de 200 referencias en bodega, Sofia guía a cada comensal hacia el maridaje perfecto con una pasión contagiosa.</p>
+                </article>
+
+                <!-- Sala -->
+                <article class="team-card flex flex-col items-center text-center reveal reveal-delay-2">
+                    <div class="relative w-44 h-44 mb-5">
+                        <div class="w-full h-full rounded-full overflow-hidden border-4 border-verde shadow-lg">
+                            <img class="w-full h-full object-cover"
+                                 src="./assets/images/team/antonio.avif"
+                                 alt="Antonio Ferrari">
+                        </div>
+                        <div class="team-overlay absolute inset-0 rounded-full bg-verde/80 flex items-center justify-center">
+                            <p class="text-crema font-display italic text-sm px-4">"La hospitalidad italiana no se aprende — se hereda."</p>
+                        </div>
+                    </div>
+                    <h3 class="text-verde font-display text-2xl italic font-semibold">Antonio Ferrari</h3>
+                    <p class="text-rojo text-sm tracking-widest uppercase mt-1">Maître de Sala</p>
+                    <p class="text-gray-500 text-sm mt-3 leading-relaxed max-w-xs">25 años al frente del servicio de sala, Antonio es el guardián de la hospitalidad que define el espíritu de Il Ristorante.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════
+             VALORES
+        ══════════════════════════════════════════ -->
+        <section class="w-full bg-verde py-20 px-10">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-crema font-display text-4xl italic text-center mb-3 reveal">I Nostri Valori</h2>
+                <div class="flex items-center justify-center gap-4 mb-14 reveal" style="color:#f2e8cf; opacity:0.5;">
+                    <div style="flex:1; height:1px; background:#f2e8cf; opacity:0.4;"></div>
+                    <span style="font-family:'Cormorant Garamond'; font-size:1.1rem;">✦</span>
+                    <div style="flex:1; height:1px; background:#f2e8cf; opacity:0.4;"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-crema">
+
+                    <div class="flex flex-col items-center text-center reveal">
+                        <div class="w-16 h-16 rounded-full border-2 border-crema/40 flex items-center justify-center mb-5">
+                            <svg class="w-7 h-7 fill-crema" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
+                        </div>
+                        <h3 class="font-display text-2xl italic mb-3">Autenticidad</h3>
+                        <p class="text-crema/70 text-sm leading-relaxed">Cada receta proviene de la tradición regional italiana. No hay atajos: usamos técnicas y tiempos de elaboración que no han cambiado en generaciones.</p>
+                    </div>
+
+                    <div class="flex flex-col items-center text-center reveal reveal-delay-1">
+                        <div class="w-16 h-16 rounded-full border-2 border-crema/40 flex items-center justify-center mb-5">
+                            <svg class="w-7 h-7 fill-crema" viewBox="0 0 24 24"><path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 0 0 8 20c4 0 4-2 8-2s4 2 8 2v-2c-4 0-4-2-8-2c-.77 0-1.4.05-2 .14C14.24 12.56 17 8 17 8z"/></svg>
+                        </div>
+                        <h3 class="font-display text-2xl italic mb-3">Producto</h3>
+                        <p class="text-crema/70 text-sm leading-relaxed">Trabajamos con proveedores de confianza en Italia. La mozzarella llega de Campania, el aceite de Sicilia, la trufa de Umbría.</p>
+                    </div>
+
+                    <div class="flex flex-col items-center text-center reveal reveal-delay-2">
+                        <div class="w-16 h-16 rounded-full border-2 border-crema/40 flex items-center justify-center mb-5">
+                            <svg class="w-7 h-7 fill-crema" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                        </div>
+                        <h3 class="font-display text-2xl italic mb-3">Hospitalidad</h3>
+                        <p class="text-crema/70 text-sm leading-relaxed">En Italia, los invitados son sagrados. Cada comensal que cruza nuestra puerta es tratado como un miembro más de la famiglia Conti.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ══════════════════════════════════════════
+         FOOTER — idéntico al resto del sitio
+    ══════════════════════════════════════════ -->
+    <footer class="w-full h-32 bg-verde text-crema mt-10 p-10 flex justify-between items-center px-40">
+        <div>
+            <p class="text-xl">Sígenos en redes sociales...</p>
+            <p class="text-sm opacity-70">© 2024 Il Ristorante Italiano - Todos los derechos reservados.</p>
+        </div>
+        <div class="flex space-x-6 text-2xl italic">
+            <span>Instagram</span>
+            <span>Facebook</span>
+        </div>
+    </footer>
+
+    <script>
+        // Intersection Observer para las animaciones reveal
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.12 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+
+</body>
+</html>
