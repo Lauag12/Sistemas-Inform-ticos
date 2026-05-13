@@ -1,0 +1,54 @@
+<svg viewBox="0 0 700 860" xmlns="http://www.w3.org/2000/svg" style="background:#f5f0e1;">
+  <title>Mockup — Carrito · Il Ristorante</title>
+  <style>
+    text { font-family: Georgia, serif; }
+  </style>
+
+  <rect x="20" y="20" width="660" height="820" rx="10" fill="#fff" stroke="#c8b89a" stroke-width="1.5"/>
+
+  <text x="350" y="76" text-anchor="middle" font-size="28" font-style="italic" fill="#b5593a">Resumen de tu Pedido</text>
+  <line x1="60" y1="88" x2="640" y2="88" stroke="#c8b89a" stroke-width="1"/>
+
+  <rect x="52" y="104" width="596" height="82" rx="6" fill="#f5f0e1" stroke="#c8b89a" stroke-width="1"/>
+  <text x="72" y="132" font-size="15" font-weight="bold" fill="#3a5a40">Pappardelle Bolognese</text>
+  <text x="72" y="152" font-size="12" fill="#888">Cantidad: 2 x 17 €</text>
+  <text x="520" y="147" text-anchor="middle" font-size="15" font-weight="bold" fill="#3a5a40">34.00€</text>
+  <rect x="572" y="132" width="64" height="28" rx="4" fill="none" stroke="#b5593a" stroke-width="1.2"/>
+  <text x="604" y="151" text-anchor="middle" font-size="11" font-weight="bold" fill="#b5593a">Eliminar</text>
+
+  <rect x="52" y="200" width="596" height="82" rx="6" fill="#f5f0e1" stroke="#c8b89a" stroke-width="1"/>
+  <text x="72" y="228" font-size="15" font-weight="bold" fill="#3a5a40">Tiramisú Peruano ©</text>
+  <text x="72" y="248" font-size="12" fill="#888">Cantidad: 1 x 8.50 €</text>
+  <text x="520" y="243" text-anchor="middle" font-size="15" font-weight="bold" fill="#3a5a40">8.50€</text>
+  <rect x="572" y="228" width="64" height="28" rx="4" fill="none" stroke="#b5593a" stroke-width="1.2"/>
+  <text x="604" y="247" text-anchor="middle" font-size="11" font-weight="bold" fill="#b5593a">Eliminar</text>
+
+  <rect x="52" y="296" width="596" height="82" rx="6" fill="#f5f0e1" stroke="#c8b89a" stroke-width="1"/>
+  <text x="72" y="324" font-size="15" font-weight="bold" fill="#3a5a40">Pizza Tartufo</text>
+  <text x="72" y="344" font-size="12" fill="#888">Cantidad: 1 x 19 €</text>
+  <text x="520" y="339" text-anchor="middle" font-size="15" font-weight="bold" fill="#3a5a40">19.00€</text>
+  <rect x="572" y="324" width="64" height="28" rx="4" fill="none" stroke="#b5593a" stroke-width="1.2"/>
+  <text x="604" y="343" text-anchor="middle" font-size="11" font-weight="bold" fill="#b5593a">Eliminar</text>
+
+  <rect x="52" y="392" width="596" height="82" rx="6" fill="#f5f0e1" stroke="#c8b89a" stroke-width="1"/>
+  <text x="72" y="420" font-size="15" font-weight="bold" fill="#3a5a40">Bruschetta al Pomodoro</text>
+  <text x="72" y="440" font-size="12" fill="#888">Cantidad: 3 x 7 €</text>
+  <text x="520" y="435" text-anchor="middle" font-size="15" font-weight="bold" fill="#3a5a40">21.00€</text>
+  <rect x="572" y="420" width="64" height="28" rx="4" fill="none" stroke="#b5593a" stroke-width="1.2"/>
+  <text x="604" y="439" text-anchor="middle" font-size="11" font-weight="bold" fill="#b5593a">Eliminar</text>
+
+  <line x1="52" y1="494" x2="648" y2="494" stroke="#c8b89a" stroke-width="1"/>
+
+  <rect x="52" y="508" width="596" height="64" rx="0" fill="none"/>
+  <text x="72" y="548" font-size="20" font-weight="bold" fill="#3a5a40">Total a pagar:</text>
+  <text x="628" y="548" text-anchor="end" font-size="20" font-weight="bold" fill="#b5593a">82.50€</text>
+
+  <rect x="52" y="592" width="286" height="52" rx="6" fill="none" stroke="#3a5a40" stroke-width="1.5"/>
+  <text x="195" y="623" text-anchor="middle" font-size="14" fill="#3a5a40">Seguir pidiendo</text>
+
+  <rect x="362" y="592" width="286" height="52" rx="6" fill="#3a5a40"/>
+  <text x="505" y="618" text-anchor="middle" font-size="12" font-weight="bold" fill="#f5f0e1" letter-spacing="1">FINALIZAR COMPRA</text>
+
+  <text x="350" y="700" text-anchor="middle" font-size="14" fill="#bbb" font-style="italic">Tu carrito está vacío.</text>
+  <text x="350" y="724" text-anchor="middle" font-size="10" fill="#ccc" font-style="italic">(estado alternativo si no hay productos)</text>
+</svg>
