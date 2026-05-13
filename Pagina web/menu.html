@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Restaurante — Menú</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=EB+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=EB+Garamond:ital,wght@0,400;1,400&display=swap%22 rel="stylesheet"/>
   <script>
     tailwind.config = {
       theme: {
@@ -29,21 +29,11 @@
 <body class="bg-crema font-body text-crema overscroll-none overflow-hidden overflow-y-scroll">
  
   <!-- NAV -->
-  <nav class="text-crema w-full h-14 bg-verdeoscuro flex flex-row space-x-20 items-center justify-center">
-            <a href="./index.html"><img class="h-12" src="./assets/images/logos/logotipo.png" alt="logotipo"></a>
-            <a href="./index.html">
-                <h3 class="text-2xl text-rojo">Inicio</h3>
-            </a>
-            <a href="./menu.html">
-                <h3 class="text-2xl hover:text-rojo transition-colors">La carta</h3>
-            </a>
-            <a href="./contacto.html">
-                <h3 class="text-2xl hover:text-rojo transition-colors">Contacta con nosotros</h3>
-            </a>
-            <a href="./reserva.html">
-                <h3 class="text-2xl hover:text-rojo transition-colors">Reserva</h3>
-            </a>
-        </nav>
+  <nav class="bg-verdeoscuro text-crema flex justify-center items-center gap-20 py-4 px-10">
+    <a href="#" class="text-crema tracking-wider hover:opacity-70">Inicio</a>
+    <a href="#" class="text-crema font-display italic text-3xl font-semibold">Restaurante</a>
+    <a href="#" class="text-crema tracking-wider hover:opacity-70">La carta</a>
+  </nav>
  
   <!-- MAIN -->
   <main class="max-w-3xl mx-auto px-10 py-16">
@@ -72,17 +62,16 @@
           <h3 class="font-display font-bold italic font-semibold text-xl text-verdeoscuro mb-2">Bruschetta al Pomodoro</h3>
           <p class="text-sm text-gray-600 mb-2"> Pan tostado con tomate fresco y albahaca.</p>
           <span class="font-display text-rojo font-semibold">7 €</span>
-        </div>
-        <div>
-            <button class="relative bg-verdeoscuro border border-verdeoscuro text-rojo hover:text-stone-900 px-6 py-2 text-xs">
-            <span class="relative z-10">Añadir al pedido</span>
-            <span class="absolute inset-0 bg-crema"></span>
-          </button>
+        <button class="btn-add bg-rojo text-crema px-4 py-2 rounded-sm font-display italic tracking-widest uppercase text-xs hover:bg-verdeoscuro transition-colors duration-300 shadow-sm"
+              data-name="Bruschetta al Pomodoro"
+              data-price="7.00">
+        Añadir al carrito
+      </button>
+          <script src="cart.js"></script>
         </div>
         <div class="w-44 h-32 bg-imgbg border border-border flex-shrink-0 relative overflow-hidden">
             <img src="./assets/images/bruschetaalpomodoro.webp" alt="bruscheta" class="w-full h-full object-cover">
         </div>
-        
       </div>
  
       <div class="flex gap-10 items-start mb-12">
@@ -91,7 +80,6 @@
           <p class="text-sm text-gray-600 mb-2">Con rúcula, parmesano y alcaparras.</p>
           <span class="font-display text-rojo font-semibold">14 €</span>
         </div>
-        
         <div class="w-44 h-32 bg-imgbg border border-border flex-shrink-0 relative overflow-hidden">
             <img src="./assets/images/carpacciodeternera.webp" class="w-full h-full object-cover">
         </div>
@@ -205,7 +193,7 @@
         </div>
       </div>
       </div>
-      
+     
       <div class="w-16 h-px bg-rojo mx-auto mb-12"></div>
       <div class="flex gap-10 items-start mb-12">
         <div class="flex-1">
@@ -236,4 +224,3 @@
  
 </body>
 </html>
- 
